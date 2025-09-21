@@ -4,28 +4,11 @@ body {
 }
 
 #root {
-  margin: 0;
   padding: 2em;
-  align-self: left;
-  text-align: left;
 }
 
 .intro-text {
   color: #3C5148;
-}
-
-.card {
-  padding: 2em;
-}
-
-.resume-download {
-  margin-top: 20px;
-  padding: 4em;
-}
-
-#resume-button {
-  background-color: #6B8E4E;
-  color: white;
 }
 
 /* From Uiverse.io by dovatgabriel */ 
@@ -37,6 +20,7 @@ body {
  color: white;
  text-decoration: none;
  font-size: 0.9em;
+ font-weight: bold;
  text-align: center;
  text-indent: 15px;
  border: none;
@@ -103,4 +87,14 @@ body {
   margin-top: 0;
   opacity: 0.4;
  }
+}
+
+.about-me {
+  margin-top: 4em;
+  color: #3C5148;
+  font-size: 1.2em;
+}
+
+.about-me-text {
+  font-weight: 520;
 }
