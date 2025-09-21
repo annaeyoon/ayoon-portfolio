@@ -1,10 +1,106 @@
+body {
+  background-color: whitesmoke;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 2em;
+  align-self: left;
+  text-align: left;
+}
+
+.intro-text {
+  color: #3C5148;
 }
 
 .card {
   padding: 2em;
+}
+
+.resume-download {
+  margin-top: 20px;
+  padding: 4em;
+}
+
+#resume-button {
+  background-color: #6B8E4E;
+  color: white;
+}
+
+/* From Uiverse.io by dovatgabriel */ 
+.buttonDownload {
+ display: inline-block;
+ position: relative;
+ padding: 10px 25px;
+ background-color: #6B8E4E;
+ color: white;
+ text-decoration: none;
+ font-size: 0.9em;
+ text-align: center;
+ text-indent: 15px;
+ border: none;
+}
+
+.buttonDownload:hover {
+ background-color: #496135;
+ color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+ content: ' ';
+ display: block;
+ position: absolute;
+ left: 15px;
+ top: 52%;
+}
+
+.buttonDownload:before {
+ width: 10px;
+ height: 2px;
+ border-style: solid;
+ border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+ width: 0;
+ height: 0;
+ margin-left: 3px;
+ margin-top: -7px;
+ border-style: solid;
+ border-width: 4px 4px 0 4px;
+ border-color: transparent;
+ border-top-color: inherit;
+ animation: downloadArrow 1s linear infinite;
+ animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+ border-color: #cdefbd;
+}
+
+.buttonDownload:hover:after {
+ border-top-color: #cdefbd;
+ animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+ 0% {
+  margin-top: -7px;
+  opacity: 1;
+ }
+
+ 0.001% {
+  margin-top: -15px;
+  opacity: 0.4;
+ }
+
+ 50% {
+  opacity: 1;
+ }
+
+ 100% {
+  margin-top: 0;
+  opacity: 0.4;
+ }
 }
